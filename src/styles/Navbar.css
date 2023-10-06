@@ -1,0 +1,23 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+
+.nav-links ul {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: inherit;
+}
