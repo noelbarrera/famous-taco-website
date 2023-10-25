@@ -12,3 +12,9 @@
 a:visited {
     color: white;
 }
+
+.half {
+    -moz-transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+    transform:scale(0.5);
+}

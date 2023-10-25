@@ -1,13 +1,50 @@
 import ImageSwiper from "./Swiper";
-import restaurantImage from '../assets/restaurant1.jpeg'
+import restaurantImage from "../assets/restaurant1.jpeg";
+import FadingImages from "./FadingImages";
 const Homepage = () => {
   return (
     <>
-      <section style={{display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '20px 20px'}}>
     
-            <img src={restaurantImage} alt="" style={{display: 'inline-block', width: '50%', height: '50%', border: '1px solid white'}}/>
-    
-        <div style={{ border: '1px solid white'}}>
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <h1>Welcome to Famous Taco</h1>
+      <FadingImages></FadingImages>
+    </div>
+      {/* <section
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          // margin: "10% 20%",
+          backgroundColor: 'darkgray'
+          
+        }}
+      >
+        <div>
+
+          <img
+            src={restaurantImage}
+            alt=""
+            className="half"
+            style={{
+              maxHeight: "70%",
+              height:"70%",
+              width: "auto",
+              border: "1px solid white",
+              display: "inline",
+              // objectFit: 'cover'
+              overflow: 'hidden'
+            }}
+          />
+        </div>
+
+        <div
+          style={{
+            border: "1px solid white",
+            width: "25%",
+            textAlign: "center",
+          }}
+        >
           <h1>Welcome to The Famous Taco</h1>
           <p>
             The Famous Taco is a local gem that beckons you to embark on a
@@ -25,10 +62,10 @@ const Homepage = () => {
             flavors of Mexico with each and every bite.
           </p>
         </div>
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <ImageSwiper />
-      </section>
+      </section> */}
     </>
   );
 };
