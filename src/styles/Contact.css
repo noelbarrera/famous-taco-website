@@ -1,0 +1,18 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.google-map{
+    overflow: hidden;
+    margin: 10px;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+}

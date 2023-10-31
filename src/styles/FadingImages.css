@@ -1,0 +1,67 @@
+.container {
+    position: relative;
+    display: block;
+    width: 95vw;
+    height: 75vh;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    /* background-size: contain; */
+    /* object-fit: fill; */
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation: fade 24s infinite;
+    animation: fade 24s infinite;
+  }
+  #pic1 {
+    animation-delay: 0s;
+    background-image: url("../assets/birria-tacos.webp");
+  }
+  #pic2 {
+    background-image: url('../assets/ella-christenson-UIVpd9jfxno-unsplash.jpg');
+    animation-delay: 8s;
+  }
+  #pic3 {
+    background-image: url('../assets/jarritos-mexican-soda-oOTceVp6i3U-unsplash.jpg');
+    animation-delay: 16s;
+  }
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    34% {
+      opacity: 0;
+    }
+    88% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    34% {
+      opacity: 0;
+    }
+    88% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

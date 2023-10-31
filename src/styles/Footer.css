@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    padding-top: 16px;
+}
+
+.footer p {
+    display: inline-block;
+}
+

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo-title{
+    font-size: 35px;
+    font-family: 'Aldrich', sans-serif;
+}
+.logo-desc{
+    font-size: 15px;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.nav p {
+    margin: 0px;
+}
+
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: inherit;
+}
