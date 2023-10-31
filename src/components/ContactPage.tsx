@@ -1,5 +1,5 @@
 
-const Contact = () => {
+const ContactPage = () => {
     return(
         <section className="contact-container">
           <div>
@@ -24,4 +24,4 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default ContactPage;
