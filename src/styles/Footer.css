@@ -1,12 +1,11 @@
 .footer {
     display: flex;
-    /* border: 1px solid black; */
     justify-content: center;
-    /* color: black; */
-    /* background-color: pink; */
+    background-color: black;
     flex-direction: column;
     align-items: center;
-    padding-top: 5px;
+    margin-top: 55px;
+    padding-top: 16px;
 }
 
 .footer p {

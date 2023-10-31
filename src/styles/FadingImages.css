@@ -1,8 +1,8 @@
 .container {
     position: relative;
     display: block;
-    width: 80vw;
-    height: 40vh;
+    width: 95vw;
+    height: 75vh;
     margin: 0 auto;
     object-fit: cover;
   }
@@ -12,7 +12,8 @@
     left: 0;
     width: inherit;
     height: inherit;
-    background-size: contain;
+    /* background-size: contain; */
+    /* object-fit: fill; */
     background-position: center;
     background-repeat: no-repeat;
     -webkit-animation: fade 24s infinite;
@@ -20,14 +21,14 @@
   }
   #pic1 {
     animation-delay: 0s;
-    background-image: url("../assets/food1.jpeg");
+    background-image: url("../assets/birria-tacos.webp");
   }
   #pic2 {
-    background-image: url('../assets/food2.jpeg');
+    background-image: url('../assets/ella-christenson-UIVpd9jfxno-unsplash.jpg');
     animation-delay: 8s;
   }
   #pic3 {
-    background-image: url('../assets/restaurant1.jpeg');
+    background-image: url('../assets/jarritos-mexican-soda-oOTceVp6i3U-unsplash.jpg');
     animation-delay: 16s;
   }
   @-webkit-keyframes fade {

@@ -4,7 +4,12 @@ const Navbar = () => {
   return (
     <nav className='nav'>
       <div className='nav-title'>
-        Famous Taco
+        <div className="logo">
+          <a href="\">
+          <p className="logo-title">The Famous Taco</p>
+          <p className="logo-desc">Mexican Food</p>
+          </a>
+        </div>
       </div>
     <div className='nav-links'> 
       <ul>

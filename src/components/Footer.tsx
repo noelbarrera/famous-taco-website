@@ -1,5 +1,4 @@
 import "../styles/Footer.css";
-import facebook from "../assets/facebook-app-symbol.png";
 const Footer = () => {
   return (
     <div className="footer">
