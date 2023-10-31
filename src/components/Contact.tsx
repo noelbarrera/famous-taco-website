@@ -2,8 +2,7 @@
 const Contact = () => {
     return(
         <section className="contact-container">
-        <div style={{ display: "flex", justifyContent: "center", gap: "10px", flexDirection: 'column' }}>
-          <div style={{ border: "1px solid black", textAlign: "center" }}>
+          <div>
             <h3>Contact & Hours</h3>
             <a href="https://maps.app.goo.gl/4vQnUzz18VfZrVvd6">
               4104 N Clinton St, Fort Wayne, IN 46805
@@ -21,7 +20,6 @@ const Contact = () => {
               loading="lazy"
               ></iframe>
           </div>
-        </div>
       </section>
     )
 }

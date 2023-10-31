@@ -1,8 +1,9 @@
 import FadingImages from "./FadingImages";
+import "../styles/Homepage.css"
 const Homepage = () => {
   return (
     <>
-    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <div className="homepage-container">
       <h1>- Welcome to Famous Taco -</h1>
       <FadingImages></FadingImages>
     </div>

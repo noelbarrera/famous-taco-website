@@ -1,20 +1,9 @@
-.google-map{
-    overflow: hidden;
-    margin: 10px;
-}
-
-.google-map iframe {
-    height: 100%;
-    width: 100%;
-    min-height: 300px;
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a:visited {
     color: white;
-}
-
-.half {
-    -moz-transform:scale(0.5);
-    -webkit-transform:scale(0.5);
-    transform:scale(0.5);
 }
