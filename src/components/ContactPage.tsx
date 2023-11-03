@@ -1,9 +1,9 @@
-
+import "../styles/Contact.css"
 const ContactPage = () => {
     return(
-        <section className="contact-container">
-          <div>
-            <h3>Contact & Hours</h3>
+        <div className="contact-container">
+          <div className="contact-container-info">
+            <h1>Contact & Hours</h1>
             <a href="https://maps.app.goo.gl/4vQnUzz18VfZrVvd6">
               4104 N Clinton St, Fort Wayne, IN 46805
             </a>
@@ -20,7 +20,7 @@ const ContactPage = () => {
               loading="lazy"
               ></iframe>
           </div>
-      </section>
+      </div>
     )
 }
 
