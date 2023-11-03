@@ -12,6 +12,9 @@
     flex: 0 1 auto;
 }
 
+.contact-container-info  h1 {
+    font-size: 54px;
+}
 .google-map{
     overflow: hidden;
     margin: 10px;
