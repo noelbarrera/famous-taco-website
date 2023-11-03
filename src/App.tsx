@@ -11,7 +11,7 @@ import LocationsPage from "./components/LocationsPage";
 
 function App() {
   return (
-    <>
+    <div className="App"> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage/>}/>
@@ -22,7 +22,7 @@ function App() {
         <Route path="/locations" element={<LocationsPage/>}/>
      </Routes>
       <Footer/>
-    </>
+    </div>
   );
 }
 

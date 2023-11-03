@@ -2,7 +2,7 @@ import "../styles/Contact.css"
 const ContactPage = () => {
     return(
         <div className="contact-container">
-          <div>
+          <div className="contact-container-info">
             <h1>Contact & Hours</h1>
             <a href="https://maps.app.goo.gl/4vQnUzz18VfZrVvd6">
               4104 N Clinton St, Fort Wayne, IN 46805

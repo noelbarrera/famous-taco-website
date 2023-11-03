@@ -1,14 +1,18 @@
-.google-map{
-    overflow: hidden;
-    margin: 10px;
-}
-
-.google-map iframe {
+.App {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    width: 100%;
-    min-height: 300px;
+    background-color: darkslategrey;
 }
 
-a:visited {
-    color: white;
+.header{
+    flex: 0 1 auto;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.footer {
+    flex: 0 1 auto
 }
