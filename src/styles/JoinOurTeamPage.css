@@ -1,0 +1,26 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+
+.page-container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+}
+
+.page-container-form input {
+    height: 50px;
+    width: 100%;
+}
+
+.page-container-form button {
+    width: 50%;
+    max-width: 200px;
+}
