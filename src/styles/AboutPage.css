@@ -1,0 +1,31 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+.about-container-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+}
+.about-container-description h1 {
+    font-size: 54px;
+}
+.about-container-image-container {
+    flex:1;
+    overflow: hidden;
+}
+.about-container-image-container img {
+    height: 100%;
+    width: auto;
+}
+
+.about-container-description p {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+}
