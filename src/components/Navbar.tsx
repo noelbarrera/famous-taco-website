@@ -34,11 +34,6 @@ const Navbar = () => {
           Join Our Team
           </Link>
         </li>
-        <li>
-          <Link to="/locations">
-          Locations
-          </Link>
-        </li>
       </ul>
     </div>
     </nav>
