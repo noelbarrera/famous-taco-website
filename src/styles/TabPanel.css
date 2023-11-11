@@ -1,0 +1,28 @@
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-panel-header {
+    list-style-type: none;
+    flex-direction: row;
+    padding: 0;
+    gap: 25%;
+}
+
+.tab-panel-header li {
+    cursor: pointer;
+    user-select: none;
+}
+
+.active {
+    color: darkGrey;
+    display: inline-block;
+    position: relative;
+}
+
+  
+
+
