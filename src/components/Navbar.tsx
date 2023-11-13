@@ -1,7 +1,13 @@
-import "../styles/Navbar.css"
+import { useState } from "react";
 import { Link} from 'react-router-dom';
+import CloseMenu from "../assets/x.svg"
+import "../styles/Navbar.css"
+
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+
+  console.log('click state', click)
   return (
     <nav className='nav'>
       <div className='nav-title'>
@@ -12,30 +18,38 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-    <div className='nav-links'> 
+    <div className={click ? 'nav-links active ': 'nav-links'}> 
       <ul>
-        <li>
+        <li onClick={()=> setClick(!click)}>
           <Link to="/about">
           About
           </Link>
         </li>
-        <li>
+        <li onClick={()=> setClick(!click)}>
           <Link to="/contact">
           Contact
           </Link>
         </li>
-        <li>
-          <a href="/menu">
+        <li onClick={()=> setClick(!click)}>
+          <Link to="/menu">
           Menu
-          </a>
+          </Link>
         </li>
-        <li>
+        <li onClick={()=> setClick(!click)}>
           <Link to="/join">
           Join Our Team
           </Link>
         </li>
       </ul>
     </div>
+        <div className="mobile-button"
+          onClick={()=> setClick(!click)}>
+          <div className={click ? "hamburger active": "hamburger"}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+        </div>
     </nav>
   )
 }
