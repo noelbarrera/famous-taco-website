@@ -87,7 +87,7 @@
 
     .nav-links.active {
         background: black;
-        position: absolute;
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -101,12 +101,13 @@
     .nav-links.active ul{
         font-size: 35px;
         padding: 0;
+        padding-top: 50%;
         display: flex;
         flex-direction: column;
-        gap: 10%;
+        gap: 5%;
         height: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         color: white;
     }
 
@@ -116,13 +117,16 @@
 
     .mobile-button {
         display: flex;
-        cursor: pointer;
         z-index: 1;
         margin: 0 20px;
+        position: fixed;
+        right: 0;
     } 
 
     .hamburger {
         display: block;
+        cursor: pointer;
+        z-index: 1;
     } 
 
     .hamburger.active .bar:nth-child(2){
