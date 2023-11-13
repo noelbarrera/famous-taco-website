@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link} from 'react-router-dom';
-import CloseMenu from "../assets/x.svg"
 import "../styles/Navbar.css"
 
 
