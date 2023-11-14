@@ -70,15 +70,10 @@
 }
 
 @media (max-width: 1199.98px) { 
-    .logo-desc {
-        border: 1px solid green;
-    }
  }
 
 @media (max-width: 991.98px) { 
-    .logo-desc {
-        border: 1px solid red;
-    } 
+
 }
 
 @media (max-width: 786.89px){
