@@ -41,8 +41,7 @@
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 40px;
-    overflow: hidden;
+    padding: 0px 20px;
 }
 
 .nav-links li a {
@@ -70,7 +69,19 @@
     background-color: white;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1199.98px) { 
+    .logo-desc {
+        border: 1px solid green;
+    }
+ }
+
+@media (max-width: 991.98px) { 
+    .logo-desc {
+        border: 1px solid red;
+    } 
+}
+
+@media (max-width: 786.89px){
     .logo-title {
         font-size: 30px;
     }
@@ -124,8 +135,11 @@
         z-index: 1;
         right: 0;
         margin: 0 20px;
-        position: static;
     } 
+
+    .hamburger.active {
+        position: fixed;
+    }
 
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
