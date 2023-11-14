@@ -71,6 +71,9 @@
 }
 
 @media (max-width: 575.98px) {
+    .logo-title {
+        font-size: 30px;
+    }
     .logo-desc {
         display: none;
     }
@@ -114,19 +117,14 @@
     .nav-links.active li {
         padding: 0;
     }
-
-    .mobile-button {
-        display: flex;
-        z-index: 1;
-        margin: 0 20px;
-        position: fixed;
-        right: 0;
-    } 
-
+    
     .hamburger {
         display: block;
         cursor: pointer;
         z-index: 1;
+        right: 0;
+        margin: 0 20px;
+        position: static;
     } 
 
     .hamburger.active .bar:nth-child(2){

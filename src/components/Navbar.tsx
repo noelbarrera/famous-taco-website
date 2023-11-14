@@ -41,14 +41,11 @@ const Navbar = () => {
         </li>
       </ul>
     </div>
-        <div className="mobile-button"
-          onClick={()=> setClick(!click)}>
-          <div className={click ? "hamburger active": "hamburger"}>
+          <div className={click ? "hamburger active": "hamburger"} onClick={()=> setClick(!click) }>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
           </div>
-        </div>
     </nav>
   )
 }
