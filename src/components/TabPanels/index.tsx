@@ -2,6 +2,9 @@ import { useState } from "react";
 import "../../styles/TabPanel.css";
 import TabBody from "./TabBody";
 import DinnerMenu from "./DinnerMenu";
+import KidsMenu from "./KidsMenu";
+import DessertsMenu from "./DessertsMenu";
+import BeveragesMenu from "./BeveragesMenu";
 
 export type TabsType = {
   tabName: string;
@@ -16,15 +19,15 @@ const TabPanel = () => {
     },
     {
       tabName: "KidsMenu",
-      content: <div>kids</div>,
+      content: <KidsMenu/>,
     },
     {
       tabName: "Desserts",
-      content: <div>desserts</div>,
+      content: <DessertsMenu/>,
     },
     {
       tabName: "Beverages",
-      content: <div>beverages</div>,
+      content: <BeveragesMenu/>,
     },
   ];
   const [activeTab, setActiveTab] = useState<TabsType>(tabs[0]);
@@ -32,30 +35,36 @@ const TabPanel = () => {
   console.log("active", activeTab);
   return (
     <>
-      <ul className="tab-panel-header flex">
+      <ul className="tab-panel-header">
         <li
           onClick={() => setActiveTab(tabs[0])}
           className={activeTab.tabName === "Dinner" ? "active" : ""}
         >
-          Dinner
+          <a>
+            Dinner
+            </a>
         </li>
         <li
           onClick={() => setActiveTab(tabs[1])}
           className={activeTab.tabName === "KidsMenu" ? " active" : ""}
         >
-          Kids Menu
+          <a>
+            Kids Menu
+            </a>
         </li>
         <li
           onClick={() => setActiveTab(tabs[2])}
           className={activeTab.tabName === "Desserts" ? "active" : ""}
-        >
+        > <a>
           Desserts
+        </a>
         </li>
         <li
           onClick={() => setActiveTab(tabs[3])}
           className={activeTab.tabName === "Beverages" ? "active" : ""}
-        >
+        > <a>
           Beverages
+        </a>
         </li>
       </ul>
 

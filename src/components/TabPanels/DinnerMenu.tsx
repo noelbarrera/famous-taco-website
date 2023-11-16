@@ -2,7 +2,7 @@ import "../../styles/DinnerMenu.css"
 const DinnerMenu = () => {
   return (
     <div className="menu-container">
-      <div className="menu-header">Dinner</div>
+      {/* <div className="menu-header">Dinner</div> */}
         <div className="menu-section-title">Burritos</div>
         <div className="menu-item">
           <span className="menu-item-price">$16.79</span>
@@ -41,6 +41,7 @@ const DinnerMenu = () => {
         </div>  
           {/* //TODO: possible add burrito bowl */}
       <div className="menu-section-title">Taco Platters</div>
+      <h6>Meat Choices: Steak - Chicken - Barbacoa - Chorizo - Pastor - Ground Beef - Campechano - Carnitas - Veggie</h6>
       <div className="menu-item">
         <span className="menu-item-price">$8.99</span>
         <div className="menu-item-title">Two Taco Platters</div>
