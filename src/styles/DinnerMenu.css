@@ -1,0 +1,33 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 75%;
+}
+
+h6 {
+    margin-top: 0;
+}
+
+.menu-container .menu-item {
+    margin: 1% 0px;
+}
+.menu-header {
+    font-size: 30px;
+}
+.menu-section-title {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.menu-item{
+    /* border: 1px solid white; */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-item-price {
+    float: right;
+}
