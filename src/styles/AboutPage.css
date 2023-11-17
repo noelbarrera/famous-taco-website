@@ -29,3 +29,21 @@
     padding-left: 15%;
     padding-right: 15%;
 }
+
+
+/* Mobile */
+
+@media (max-width: 786.89px){
+    .about-container {
+        flex-direction: column;
+    }
+    .about-container-image-container {
+        max-height: 500px;
+        overflow: hidden;
+        object-fit: cover;
+    } 
+    .about-container-image-container img {
+        height: 100%;
+        width: auto;
+    }
+}
