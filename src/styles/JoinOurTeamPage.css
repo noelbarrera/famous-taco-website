@@ -3,6 +3,8 @@
     flex-direction: column;
     flex: 1 1 auto;
     align-items: center;
+    margin: 5% 5%;
+    text-align: center;
 }
 
 .page-container-submission {
@@ -15,7 +17,7 @@
     justify-content: center;
     align-items: start;
     gap: 10px;
-    width: 30%;
+    width: 33%;
 }
 
 .page-container-form input {
@@ -35,3 +37,16 @@
     height: 100px;
     resize: none;
 }
+
+
+/* Mobile */
+@media (max-width: 786.89px){
+    .page-container-form {
+        width: 100%;
+    }
+
+    .page-container-form input, textarea {
+        box-sizing: border-box;
+    }
+
+ }
