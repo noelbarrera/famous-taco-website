@@ -7,3 +7,53 @@
 a:visited {
     color: white;
 }
+
+.menu-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.menu-section-image {
+    background-image: url("../assets/tacos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+.menu-section-desc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid red;
+    overflow: hidden;
+    line-height: 2;
+    padding: 15px 15px;
+}
+.menu-section-desc p {
+    word-wrap: pre-wrap;
+}
+
+.menu-section-desc-button {
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+
+.header-section-container {
+    /* object-fit: cover; */
+    height: 40vh;
+    overflow: hidden;
+    /* object-position: center; */
+}
+
+.header-section-container img {
+    position: relative;
+    top: -50;
+    left: 0;
+}
