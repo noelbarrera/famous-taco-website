@@ -1,5 +1,4 @@
 import "../styles/Homepage.css";
-import bannerImage from "../assets/alexander-kovacs-TivEEYzzhik-unsplash.jpg";
 const Homepage = () => {
   return (
     <div className="homepage-container">
