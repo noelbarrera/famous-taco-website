@@ -1,36 +1,49 @@
 .homepage-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
+.banner {
+  background-image: url(../assets/alexander-kovacs-TivEEYzzhik-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh;
+  width: 100%;
+  overflow: hidden;
+}
+.banner img {
+  position: relative;
+  left: 0;
+  top: -250px;
+  max-width: 100%;
+  width: 100vw;
+  display: block;
 }
 
-a:visited {
-    color: white;
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  text-align: center;
+  margin: 4.5rem 0;
 }
 
-.welcome-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    /* flex: 1 1 auto; */
-    width: 100%;
-    /* margin: auto 0; */
-    min-height: 15vh;
-}
-
-.welcome-container p {
-    width: 75%; 
+.welcome-section h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .menu-section {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    border: 1px solid white;
 }
 
 .menu-section-image {
@@ -39,23 +52,23 @@ a:visited {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    width: 50%;
+    width: 50%; 
     overflow: hidden;
-    /* needs right border */
 }
+
 .menu-section-desc {
     display: flex;
     flex-direction: column;
     width: 50%;
-    overflow: hidden;
     line-height: 2;
+    padding: 15px 15px;
     padding: 0;
     margin: 4rem 3rem;
 }
 
 .menu-section-desc h2 {
     font-size: 35px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .menu-section-desc p {
@@ -70,44 +83,55 @@ a:visited {
     border: 1px solid white;
 }
 
-
-.header-section-container {
-    height: 30vh;
-    overflow: hidden;
-}
-
-.header-section-container img {
-    position: relative;
-    left: 0;
-    top: -600px;
-    /* width: 110vw; */
-    object-fit: cover;
-    object-position: bottom;
-    min-height: 45vh;
-}
-
-
+/*Tablet*/
+@media (max-width: 991.98px) { 
+    .welcome-section h1 {
+        margin-top: 15px;
+    }
+} 
 
 /*Mobile*/
-@media (max-width: 786.89px){
-    .header-section-container img {
-        position: relative;
-        left: 0;
-        top: -500px;
-        width: initial;
-    }
-    .menu-section {
-        flex-direction: column;
-        height: 100%;
-    }
-    .menu-section-desc {
-        height: 50%;
-        margin: 0;
-    }
-    .menu-section-image {
-        height: 50%;
-        width: 100%;
-    }
-
-
- }
+@media (max-width: 786.89px) {
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+  }
+  .banner {
+    overflow: hidden;
+    height: 25vh;
+    max-width: 100%;
+  }
+  .banner img {
+    width: 200vw;
+    top: -100px;
+    left: -100px;
+    max-width: unset;
+  }
+  .menu-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-section-image {
+    height: initial;
+    min-height: 30vh;
+    width: 100%;
+    display: block;
+  }
+  .menu-section-desc {
+    text-align: center;
+    margin-right: auto;
+    margin: 0;
+    width: 90%;
+    max-width: 100%;
+  }
+  .menu-section-desc h2 {
+    text-align: center;
+  }
+  .menu-section-desc p {
+    word-wrap:break-word;
+    font-size: 1rem;
+  }
+}
