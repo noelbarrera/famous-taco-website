@@ -1,9 +1,137 @@
 .homepage-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
+.banner {
+  background-image: url(../assets/alexander-kovacs-TivEEYzzhik-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh;
+  width: 100%;
+  overflow: hidden;
+}
+.banner img {
+  position: relative;
+  left: 0;
+  top: -250px;
+  max-width: 100%;
+  width: 100vw;
+  display: block;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  text-align: center;
+  margin: 4.5rem 0;
+}
+
+.welcome-section h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-section-image {
+    background-image: url("../assets/tacos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%; 
+    overflow: hidden;
+}
+
+.menu-section-desc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    line-height: 2;
+    padding: 15px 15px;
+    padding: 0;
+    margin: 4rem 3rem;
+}
+
+.menu-section-desc h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.menu-section-desc p {
+    word-wrap: pre-wrap;
+}
+
+.menu-section-desc-button {
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+/*Tablet*/
+@media (max-width: 991.98px) { 
+    .welcome-section h1 {
+        margin-top: 15px;
+    }
+} 
+
+/*Mobile*/
+@media (max-width: 786.89px) {
+  .welcome-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-a:visited {
-    color: white;
+    width: 90%;
+    text-align: center;
+  }
+  .banner {
+    overflow: hidden;
+    height: 25vh;
+    max-width: 100%;
+  }
+  .banner img {
+    width: 200vw;
+    top: -100px;
+    left: -100px;
+    max-width: unset;
+  }
+  .menu-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-section-image {
+    height: initial;
+    min-height: 30vh;
+    width: 100%;
+    display: block;
+  }
+  .menu-section-desc {
+    text-align: center;
+    margin-right: auto;
+    margin: 0;
+    width: 90%;
+    max-width: 100%;
+  }
+  .menu-section-desc h2 {
+    text-align: center;
+  }
+  .menu-section-desc p {
+    word-wrap:break-word;
+    font-size: 1rem;
+  }
 }
